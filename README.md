@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Project Overview
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Name
 
-## Available Scripts
+Year One Technical Challenge - "Movie Lookup"
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+This is a full stack project using the MERN stack where the user is able to lookup movies as well as like or dislike them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## API and Data Sample
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The API I'm using is the OMDB API, https://www.omdbapi.com/ which requieres an API key. Here is a sample:
 
-### `npm test`
+```json
+{
+"Title": "Discount Spiderman 2",
+    "Year": "2018",
+    "Rated": "N/A",
+    "Released": "17 Oct 2018",
+    "Runtime": "52 min",
+    "Genre": "Comedy",
+    "Director": "Addison Kilgore",
+    "Writer": "Addison Kilgore, Seth",
+    "Actors": "Addison Kilgore, Seth, Tilted Cannonz, Tree Huff",
+    "Plot": "Discount Spiderman is back with the help of Tim White and Bot Bot. The weird group of estranged heroes must stop and defeat T before he can kill any more innocent and useless people.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYWU5YTg2ODgtYjY5Mi00ZDJhLTkyYjktYWRmNTc3ZjQ4YmJkXkEyXkFqcGdeQXVyODE4Njg5ODQ@._V1_SX300.jpg",
+    "Ratings": [],
+    "Metascore": "N/A",
+    "imdbRating": "N/A",
+    "imdbVotes": "N/A",
+    "imdbID": "tt9146610",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+}
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Wireframes
 
-### `npm run build`
+Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### MVP/PostMVP
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### MVP 
+*These are examples only. Replace with your own MVP features.*
 
-### `npm run eject`
+- Find and use external api 
+- Render data on page 
+- Allow user to choose favorites 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### PostMVP  
+*These are examples only. Replace with your own Post-MVP features.*
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Add second API
+- Use local storage to save user favorites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## SWOT Analysis
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Code Snippet
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+function reverse(string) {
+	// here is the code to reverse a string of text
+}
+```
