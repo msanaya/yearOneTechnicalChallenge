@@ -6,15 +6,15 @@ const Header = () => {
     return (
         <header className='header'>
             <div className='header-left'>
-                <NavLink className='logo' to="/"><img src="https://res.cloudinary.com/dhj9oydvn/image/upload/v1620791546/movie_logo_fdfhcu.png" alt="Movie logo" id="movieLogo"></img></NavLink>
+                <NavLink className='logo' to="/"><img src="https://res.cloudinary.com/dhj9oydvn/image/upload/v1620876663/movie_logo_2_xwcgqh.png" alt="Movie logo" id="movieLogo"></img></NavLink>
             </div>
             <div className='header-right'>
-                <NavLink className='link' to="/charts">Charts</NavLink>
+                <NavLink className='nav' to="/charts" ><img src="https://res.cloudinary.com/dhj9oydvn/image/upload/v1620875111/Chart_2_savixi.png" alt="Chart text image" id="chart-image"></img></NavLink>
             </div>
-            <div className='h-bottom-border'><img src='https://res.cloudinary.com/dhj9oydvn/image/upload/v1620794372/wavy_line_rcs1z4.png' alt='Bottom border'
-            id='border-image' ></img>
+            <div className='bottom-border'>
+
             </div>
-            
+
         </header>
     );
 };
