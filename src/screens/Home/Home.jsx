@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 // import './Home.css'
 import Layout from '../../components/shared/Layout/Layout'
 import Search from '../../components/Search/Search'
@@ -11,9 +11,10 @@ const Home = () => {
     // const [loading, setLoading] = useState(true);
 
     const apiKey = process.env.REACT_APP_MOVIE_API_KEY
+    const apiURL = `https://www.omdbapi.com/?apikey=${apiKey}&`
 
     useEffect(() => {
-        const apiURL = `https://www.omdbapi.com/?apikey=${apiKey}&`
+
         fetch(apiURL)
             .then(response => response.json())
             .then(data => {
@@ -21,7 +22,20 @@ const Home = () => {
             });
     }, []);
 
-    
+
+    //var hello = function() {
+    //   return "Hello World!";
+    // }
+    //var hello = () => {
+    //   return "Hello World!";
+    // }
+    const search = (searchInput) => {
+        fetch(apiURL+"t="+ searchInput)
+            .then(response => response.json())
+            .then(data => {
+                setMoviesData(data.Search)
+            });
+    };
 
     // useEffect(() => {
     //     const getMovies = async () => {
@@ -47,14 +61,14 @@ const Home = () => {
     // };
     // getMovie();
 
-    const handleSubmit = e => e.preventDefault();
+
 
 
     return (
         <Layout>
             <div className="home">
                 <h1>This is home</h1>
-                <Search onSubmit={handleSubmit}
+                <Search search={search}
                 />
             </div>
 
