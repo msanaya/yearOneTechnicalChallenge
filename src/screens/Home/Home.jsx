@@ -14,13 +14,13 @@ const Home = () => {
     const apiURL = `https://www.omdbapi.com/?apikey=${apiKey}&`
 
     useEffect(() => {
-
         fetch(apiURL)
             .then(response => response.json())
             .then(data => {
-                setMoviesData(data.Search)
+                setMoviesData(data.search)
             });
-    }, []);
+    }, [apiURL]);
+
 
 
     //var hello = function() {
@@ -30,7 +30,8 @@ const Home = () => {
     //   return "Hello World!";
     // }
     const search = (searchInput) => {
-        fetch(apiURL+"t="+ searchInput)
+        console.log(searchInput)
+        fetch(`${apiURL}t=${searchInput}`)
             .then(response => response.json())
             .then(data => {
                 setMoviesData(data.Search)
@@ -68,10 +69,8 @@ const Home = () => {
         <Layout>
             <div className="home">
                 <h1>This is home</h1>
-                <Search search={search}
-                />
+                <Search search={search} />
             </div>
-
         </Layout>
     );
 };
